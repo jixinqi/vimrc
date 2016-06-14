@@ -6,6 +6,7 @@ Bundle 'VundleVim/Vundle.vim'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'scrooloose/nerdtree'
 Plugin 'octol/vim-cpp-enhanced-highlight'
+Bundle 'Valloric/YouCompleteMe'
 call vundle#end()
 filetype plugin indent on
 
@@ -23,3 +24,6 @@ map <C-n> :NERDTreeToggle<CR>
 "vim-cpp-enhanced-highlight
 let g:cpp_class_scope_highlight = 1
 let g:cpp_experimental_template_highlight = 1
+
+"YouCompleteMe
+let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'

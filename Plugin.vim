@@ -5,8 +5,9 @@ call vundle#begin()
 Bundle 'VundleVim/Vundle.vim'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'scrooloose/nerdtree'
-Plugin 'octol/vim-cpp-enhanced-highlight'
+Bundle 'octol/vim-cpp-enhanced-highlight'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'scrooloose/syntastic'
 call vundle#end()
 filetype plugin indent on
 
@@ -27,3 +28,4 @@ let g:cpp_experimental_template_highlight = 1
 
 "YouCompleteMe
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+set completeopt-=preview

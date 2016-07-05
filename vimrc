@@ -14,6 +14,9 @@ set statusline=%f\ -\ FileType:\ %y
 "显示行号
 set nu
 
+"高亮当前行
+set cursorline
+
 "显示80字符提示线
 set colorcolumn=81
 

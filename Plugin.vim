@@ -7,6 +7,7 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'scrooloose/nerdtree'
 Bundle 'octol/vim-cpp-enhanced-highlight'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'Valloric/ListToggle'
 Bundle 'scrooloose/syntastic'
 call vundle#end()
 filetype plugin indent on
@@ -28,4 +29,8 @@ let g:cpp_experimental_template_highlight = 1
 
 "YouCompleteMe
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+let g:ycm_confirm_extra_conf = 0
 set completeopt-=preview
+
+"syntastic
+let g:syntastic_always_populate_loc_list = 1

@@ -12,7 +12,7 @@ let mapleader = ","
 set statusline=%f\ -\ FileType:\ %y
 
 "显示行号
-set nu
+set number
 
 "高亮当前行
 set cursorline

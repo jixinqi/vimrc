@@ -28,7 +28,7 @@ let g:cpp_class_scope_highlight = 1
 let g:cpp_experimental_template_highlight = 1
 
 "YouCompleteMe
-let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+"Build '~/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf = 0
 set completeopt-=preview
 

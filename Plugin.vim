@@ -29,6 +29,16 @@ let g:cpp_experimental_template_highlight = 1
 
 "YouCompleteMe
 "Build '~/.ycm_extra_conf.py'
+if !empty(glob("~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"))
+    let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
+endif
+let g:ycm_goto_buffer_command = 'horizontal-split'
+nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nnoremap <leader>gd :YcmCompleter GoToDeclaration<CR>
+let g:ycm_collect_identifiers_from_comments_and_strings = 1
+let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_complete_in_comments = 1
+let g:ycm_complete_in_strings = 1
 let g:ycm_confirm_extra_conf = 0
 set completeopt-=preview
 

@@ -24,6 +24,9 @@ set colorcolumn=81
 set list
 set listchars=tab:\|\ ,trail:~
 
+"退出搜索高亮
+noremap <silent><leader>/ :nohls<CR>
+
 "缩进
 set shiftwidth=4
 set tabstop=4
